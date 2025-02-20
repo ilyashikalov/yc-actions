@@ -1,13 +1,13 @@
 name: 'Deploy Cloud Function to Yandex Cloud'
 description: 'Deploy Function code to the Cloud'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  function-id:  # id of input
+    description: 'id of the function being redeployed'
     required: true
-    default: 'World'
+    default: 'd4e3iua9srqpkh0et7gr'
 outputs:
   time: # id of output
-    description: 'The time we greeted you'
+    description: 'The time the new version of the function was deployed'
 runs:
   using: 'node20'
   main: 'index.js'
