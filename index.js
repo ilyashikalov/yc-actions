@@ -9,7 +9,7 @@ try {
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
-  const headCommit = github.context.headCommit.id;
+  //const headCommit = github.context.headCommit.id;
   console.log(`Context: ${github.context}`);
   // console.log(`Head commit: ${headCommit}`);
   console.log(`The event payload: ${payload}`);
