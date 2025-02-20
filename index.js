@@ -3,12 +3,14 @@ const github = require('@actions/github');
 
 try {
   // `who-to-greet` input defined in action metadata file
-  const nameToGreet = core.getInput('who-to-greet');
-  console.log(`Hello ${nameToGreet}!`);
+  const functionId = core.getInput('function-id');
+  console.log(`functionId = ${functionId}!`);
   const time = (new Date()).toTimeString();
   core.setOutput("time", time);
   // Get the JSON webhook payload for the event that triggered the workflow
   const payload = JSON.stringify(github.context.payload, undefined, 2)
+  const headCommit = github.context.headCommit.id;
+  console.log(`Head commit: ${headCommit}`);
   console.log(`The event payload: ${payload}`);
 } catch (error) {
   core.setFailed(error.message);
