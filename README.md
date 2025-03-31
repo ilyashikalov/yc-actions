@@ -3,7 +3,7 @@ GitHub Actions for Yandex Cloud
 
 # Hello world javascript action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+This action prints "Hello World" or "Hello" + the name of a person to greet to the log. 
 
 ## Inputs
 
@@ -15,7 +15,7 @@ This action prints "Hello World" or "Hello" + the name of a person to greet to t
 
 ### `time`
 
-The time we greeted you.
+The time now
 
 ## Example usage
 
